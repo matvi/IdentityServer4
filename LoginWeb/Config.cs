@@ -57,7 +57,9 @@ namespace LoginWeb
 					{
 						new Secret ("secret".Sha256())
 					},
-					AllowedScopes = { "api1", "tswTools" },
+					// Remember that to avoid the error invalid_scope the AllowedScopes must be equal to the ApiResource that is definde above.
+					// For example if a request is sent with a scope "api2" it will throw an error because not ApiResource with the name "api2" is defined.
+					AllowedScopes = { "api1", "api2" } 
 					
 				},
 
