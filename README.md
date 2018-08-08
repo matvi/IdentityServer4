@@ -47,3 +47,5 @@ Its the client that will ask for the access_token and the identity_token to have
 
 Client
 Its a default client that uses the ClientCredetials flow.
+
+For more information https://davidmatablog.wordpress.com/2018/07/19/securing-dotnetcore-2-1-web-api-with-identityserver4/
